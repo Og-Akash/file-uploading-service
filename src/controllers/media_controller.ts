@@ -73,14 +73,14 @@ const uploadMedia = async (c: Context) => {
                 // Store media info in the database
                 await media.create({
                     name: secureFilename,
-                    videoUrl: `http://${process.env.HOST_URL}/static/uploads/${fileTypePath}/${secureFilename}`,
+                    videoUrl: `${process.env.HOST_URL}/static/uploads/${fileTypePath}/${secureFilename}`,
                     fileType: file.type.split("/")[0]
                 });
 
                 // Collect uploaded file info
                 uploadedFiles.push({
                     fileName: secureFilename,
-                    filePath: `http://${process.env.HOST_URL}/static/uploads/${fileTypePath}/${secureFilename}`,
+                    filePath: `${process.env.HOST_URL}/static/uploads/${fileTypePath}/${secureFilename}`,
                     fileType: file.type.split("/")[0]
                 });
             } else {
