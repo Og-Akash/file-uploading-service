@@ -1,0 +1,14 @@
+{
+  "name": "Video-Uploader",
+  "scripts": {
+    "build": "bun run tsc",
+    "start": "bun run dist/index.js"
+  },
+  "dependencies": {
+    "hono": "^4.6.3",
+    "mongoose": "^8.7.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
