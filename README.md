@@ -5,7 +5,7 @@ bun install
 
 To run:
 ```sh
-bun run dev
+bun run start
 ```
 
 open http://localhost:3000
